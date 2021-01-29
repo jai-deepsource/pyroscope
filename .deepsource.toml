@@ -1,0 +1,14 @@
+version = 1
+
+exclude_patterns = ["examples/**"]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_paths = ["github.com/pyroscope-io/pyroscope"]
+
+[[transformers]]
+name = "gofmt"
+enabled = true
